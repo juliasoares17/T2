@@ -29,6 +29,8 @@ Este projeto é a atividade 2 da avaliação passada pelo professor Gerson da Pi
 
 - **React 18.2.0** – Biblioteca para construção de interfaces.
 
+- **React DOM 18.2.0** - Integra o React à árvore DOM do navegador.
+
 - **TypeScript 4.9.5** – Superset do JavaScript com tipagem estática.
 
 - **Bootstrap 5.3.0** – Framework CSS para layout e componentes responsivos.
