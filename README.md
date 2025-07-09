@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# T2 – Interface Gráfica para Sistema de Gestão de Comércio Pet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Introdução
 
-## Available Scripts
+Este projeto é a atividade 2 da avaliação passada pelo professor Gerson da Pinha Neto, cujo objetivo é implementar uma GUI para um sistema que lojas do "mercado pet" devem poder utilizar para administrar seus negócios.
 
-In the project directory, you can run:
+## 2. Funcionalidades
+- Clientes: criar, editar, excluir e listar;
 
-### `npm start`
+- Pets: criar vinculando a um cliente via CPF, editar, excluir e listar;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Produtos e Serviços: criar, editar, excluir e listar;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Registro de consumo: selecionar cliente, pet, item, quantidade e tipo;
 
-### `npm test`
+- Relatórios:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Top 5 produtos mais consumidos,
 
-### `npm run build`
+  - Top 5 serviços mais consumidos,
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Itens mais consumidos por tipo e raça de pets,
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Top 10 clientes por quantidade consumida,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Top 5 clientes por valor consumido.
 
-### `npm run eject`
+## 3. Tecnologias utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **React 18.2.0** – Biblioteca para construção de interfaces.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **TypeScript 4.9.5** – Superset do JavaScript com tipagem estática.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Bootstrap 5.3.0** – Framework CSS para layout e componentes responsivos.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **React Scripts 5.0.1** – Scripts de build, teste e execução (via create-react-app).
 
-## Learn More
+- **Web Vitals 2.1.4** – Coleta de métricas de performance.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Node.js 23.5.0** - Utilizado como ambiente para rodar e compilar o projeto React (via npm).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 4. Estrutura do projeto
+
+```
+T2/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html   
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── componentes/
+│   │   └── barraNavegacao.tsx
+│   ├── paginas/
+│   │   ├── cadastro.tsx
+│   │   ├── clientes.tsx
+│   │   ├── login.tsx
+│   │   ├── pets.tsx
+│   │   ├── produtos.tsx
+│   │   └── servicos.tsx
+│   ├── index.css
+│   ├── index.tsx
+│   ├── logo.svg
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   └── setupTests.ts      
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
+
+```
+
+## 5. Instruções para execução
+Siga os passos abaixo para executar o projeto localmente:
+
+**1 -> Clone o repositório:**
+
+```
+git clone https://github.com/juliasoares17/T2
+cd T2
+```
+**2 -> Instale as dependências:**
+
+```
+npm install
+```
+ℹ️ **Observação:** Durante a instalação (`npm install`), alguns avisos de dependências desatualizadas podem aparecer. Isso não compromete a execução do projeto.
+
+**3 -> Inicie o projeto:**
+
+```
+npm start
+```
+**4 -> Acesse no navegador:**
+
+Abra o endereço http://localhost:3000 para visualizar a interface.
+
+Para finalizar a execução do projeto, basta retornar ao terminal, digitar CTRL + C e confirmar a finaização digitando "s".
+
+## 6. Considerações finais
+Esta atividade teve como objetivo desenvolver a base da interface gráfica do sistema de gestão pet, utilizando somente componentes de classe, conforme exigido, e deixando o produto preparado para modernização visual e futura integração com backend e banco de dados.
+
+
